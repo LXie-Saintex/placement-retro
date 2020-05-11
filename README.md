@@ -1,2 +1,3 @@
 # placement-retro
-placement retro 
+
+## weekly retro during placement 
