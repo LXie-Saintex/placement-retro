@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Week 2 retro</title>
+    </head>
+    <body>
+        <h1>Week 2</h1>
+        <ul>
+            <li>4th May - 8th May, 2020</li>
+            <li>Placement team: MAIN</li>
+            <li>Topics: 
+                <ol>
+                    <li>Kubernetes: node, pod, service/li>
+                    <li>Typrscript type inference</li>
+                    <li>TDD custom JS map, filter and reduce</li>
+                    <li>thunk, currying, partial application and closures</li>
+                    <li>Elm</li>
+                    <li>JS arrow functions</li>
+                    <li>var, const and let</li>
+                    <li>Temporal Dead Zone</li>
+                    <li>Formatters</li>
+                    <li>JS Well Known Symbols</li>
+                </ol>
+            </li>
+        </ul>
+        <article>
+            <p> Things I enjoyed most this week: JS arrow functions, thunk and closures, Well know symbols 
+                and TDD custom JS higher order functions </p>
+            <p> I encountered a series of brand new concepts again this week. 
+            </p>
+            <p> Test-Drive was fun. It was good to have a general overview of the available JS testing tools and their pros and cons. 
+                I chose Ava in the end for the custom implementations of map, filter and reduce. It is very fast and has a clean and minimal look. 
+                In the docs, it's said that Ava can run multiple tests at the same time. I'm not sure what advantages does that give me. 
+                I didn't consider Mocha because I don't see the point of flooding a simple test suite with plugins. 
+                I combined Ava with Sinon and Node.js assert library for the tests. It was the first time that I used
+                seperate tools for writing tests, asserting and spying. Next I'd like to look into Tape, from which Ava borrowed heavily.
+            </p> 
+            <p> More functional programming concepts this week! I like how lazy evaluation allows for more control of the program. 
+                There is more deliberative planning and less unexpected results. 
+            </p>
+            <p> I was glad to find arrow functional on the daily list after the quirky behaviour of <code>this</code> during TDD. </p>
+            <p> Well known symbols seem to be useful. I enjoyed writing custom iterators, though they didn't work as expected.</p>
+            <p> I started building a new web app in Elm nearing the end of this week. I had built two Elm apps before, one is a rock,paper, scissors game,
+                and the other gives you the current weather in London.This time I used Merriam-Webster API to build a dictionary app where you search for a word, 
+                and then are given either its definition or some alternative words. I was quite familiar with the http package so it didn't take me
+                long to display something onto the screen. But it did take me some time to construct a url based on user inputs. 
+                The part of capturing inputs is straightforward. What I found baffling was that the triggered events cannot directly pass data to each other in Elm.
+                I was slightly lost when I realize that I cannot resort to global variables either as when coding in javascript. In the end, I added that piece of info
+                to the model, which is available throughout the program. I was rather reluctant to do so because I thought of model as, well, where models gather. 
+                I didn't think it's sensible for the model to hold client-generated values.
+            </p>
+            <p> 
+               The part that I struggled most with was the decoders. I found it hard to read the type signature of union tagged types. 
+               I don't know if it's to accommodate a great variety of use cases, but I found the docs' explaination of the methods rather vague. 
+            </p>
+        </article>
+    </body>
+</html>
