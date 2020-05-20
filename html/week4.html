@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Week 4 retro</title>
+    </head>
+    <body>
+        <h1>Week 4</h1>
+        <ul>
+            <li>18th May - 22th May, 2020</li>
+            <li>Placement team: MAIN</li>
+            <li>Topics: 
+                <ol>
+                    <li>
+                        <p>Project Mogel</p>
+                        <ul>
+                            <li>Makefile</li>
+                            <li>Gitlab Config</li>
+                            <li>Gitlab pipeline</li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <p>Go Learning</p>
+                        <ul>
+                            <li>marshal and unmarshal</li>
+                            <li>array and slice</li>
+                            <li>buffered and unbuffered channel</li>
+                            <li>Deadlock in concurrent programming</li>
+                            <li>race condition and data race</li>
+                            <li>TCP Vs. UDP</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <article>
+            <p> Things I enjoyed most this week: my first ticket, arrays and slices in go, deadlock </p>
+            <p> 
+               Got my first ticket this week 🧚🏼‍♀️. 
+            </p>
+            <p> I worked on a cross-browser issue. The same decoder was alright in Chrome but failing in Firefox.
+                I found the decoder that was failing, and discovered it uses a regular expression. I tested the regex 
+                on jsfiddle in firefox, which threw a syntax error, but was fine in Chrome. I looked into it and found that
+                Firefox does not yet support named capturing group. So I changed it to normal capturing group to finish my first ticket. 
+            </p>
+            <p>
+                Solving the actual debug was not enough. When I triggered the CI pipeline on Gitlab, 
+                Cypress tests were failing in need of a record key, which was visible only to master branch. 
+                I first tried to add the key directly to the yaml file, which passes the test, but leaves security concerns.
+                The variable was protected and exposed to only protected branches. so I changed the branch setting in order to access the variable.
+            </p>
+        </article>
+    </body>
+</html>
