@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Week 4 retro</title>
+    </head>
+    <body>
+        <h1>Week 4</h1>
+        <ul>
+            <li>26th May - 29th May, 2020</li>
+            <li>Placement team: MAIN</li>
+            <li>Topics: 
+                <ol>
+                    <li>
+                        <p>Project Mogel</p>
+                        <ul>
+                            <li>elm-review</li>
+                            <li>elm-syntax</li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <p>Frontend performance</p>
+                        <ul>
+                            <li>web workers, service workers and web sockets</li>
+                            <li>PWAs</li>
+                            <li>http/2</li>
+                            <li>server push </li>
+                            <li>async and defer</li>
+                            <li>PRPL principles</li>
+                            <li>requestAnimationFrame, requestIdleCallback</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <article>
+            <p> Things I enjoyed most this week: service workers, http/2, elm-syntax </p>
+            <p> 
+               Been working on two tickets this week. 
+            </p>
+            <p> One is to do with writing a linting rule with a open source library. It was fun to use library to build tools that help the project. 
+                 Not sure how similar the AST of elm-syntax is to other ASTs, but I am liking the idea of learning more about it. Elm-review had a rather
+                 small community, so I mostly got help from the major contributors of that library. They suggested to publish the rule once it's done either inetgrate
+                 into the main one or under my own name. On Friday, I started writing the docs and README.md in Elm, as well as 
+                 configuring <code>elm.json</code> so as to make it a publishable package.
+            </p>
+            <p> The other ticket is to do with error handling. It was easy to write more detailed error messages since there was already a <code>HttpHelper</code> file.
+                What took time was to find a way recover from the errored state. I found it a bit hard to locate which part was causing the problem, because
+                almost all functions modified the state one way or the other. Luckily the naming was expressive enough for me to narrow the search. 
+                It's clear to me now how important naming is for maintaining a large project or legacy code. 
+            </p>
+            <p>
+                I should make a PWA to practice the concepts I read about this week.
+            </p>
+        </article>
+    </body>
+</html>
