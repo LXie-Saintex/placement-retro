@@ -1,0 +1,33 @@
+$primary-color : hsl(240, 100%, 15%); 
+$secondary-color : hsl(40, 100%, 25%); 
+$alt-color : hsl(300, 100%, 20%); 
+$main-font: "Helvetica"; 
+
+body {
+    width : 70vw; 
+    padding: 20px;
+    font-family: $main-font;
+}
+
+article {
+    border: .5px dotted $primary-color;
+    padding: 10vw;
+    margin: 50px auto;
+    line-height: 1.5;
+}
+
+h1, ul li{
+    color: $primary-color;
+}
+
+.date {
+    color: $secondary-color;
+}
+
+.team {
+    color: $alt-color;
+}
+
+.date, .team {
+    font-size: 1.3em;
+}

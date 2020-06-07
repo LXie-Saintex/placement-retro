@@ -1,0 +1,30 @@
+body {
+  width: 70vw;
+  padding: 20px;
+  font-family: "Helvetica";
+}
+
+article {
+  border: 0.5px dotted #00004d;
+  padding: 10vw;
+  margin: 50px auto;
+  line-height: 1.5;
+}
+
+h1, ul li {
+  color: #00004d;
+}
+
+.date {
+  color: #805500;
+}
+
+.team {
+  color: #660066;
+}
+
+.date, .team {
+  font-size: 1.3em;
+}
+
+/*# sourceMappingURL=basic.css.map */
