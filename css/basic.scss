@@ -1,7 +1,4 @@
-$primary-color : hsl(240, 100%, 15%); 
-$secondary-color : hsl(40, 100%, 25%); 
-$alt-color : hsl(300, 100%, 20%); 
-$main-font: "Helvetica"; 
+@import "../stylelib"; 
 
 body {
     width : 70vw; 
