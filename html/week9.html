@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Week 8 retro</title>
+        <link rel="stylesheet" href="../css/basic.css">
+    </head>
+    <body>
+        <h1>Week 8</h1>
+        <ul>
+            <li class="date">24th Jun - 26th Jun, 2020</li>
+            <li class="team">Placement team: MAIN</li>
+            <li>
+                <p>Go backend</p>
+                <ul>
+                    <li>headless API</li>
+                    <li>http/https</li>
+                    <li>SSL/TLS</li>
+                    <li>REST & GraphQL</li>
+                    <li>CAP theorem</li>
+                    <li>Go web frameworks</li>
+                    <li>Go modules</li>
+                    <li>Fprintf</li>
+                </ul>
+            </li>
+        </ul>
+        <article>
+            <p> Things I enjoyed most this week: CAP theorem</p>
+            <p> 
+              another short week. Started building a Go backend on Wednesday. 
+            </p>
+            <p> 
+                was asked to choose a Go web framework. I didn't know what kinda works this backend should handle, so I chose the simplest
+                httprouter, and expected to add other frameworks for building along the way, as the objectives and tasks become clearer. Craig
+                said initially it should just be a headless API and later it can be developed into a full stack app that serve files. 
+            </p>
+            <p>
+                On Thursday, I started a new repo for the backend. I decided to TDD this project (and probably every single project I'll be doing 
+                for the rest of my life). There was some confusion about package and modules when I tried to test the <code>main()</code> function. 
+                It seemed that the main package cannot be imported for testing. I put the functions to be tested in a separate package, and read 
+                about the Go modules blog to get the import paths right. 
+            </p>
+            <p>
+                Took some time to think about what to test in a http api and figure out how to use the adapters as well.
+            </p>
+            <p>
+                By the end of Thursday, I had a server listening on port 8080 and the router&handler was working fine. 
+                The test was off. 
+            </p>
+            <p>
+                Found out the problem with the test on Friday. I need to set up a test context with a framework. Will use gin-gonic, which also built on httprouter.
+            </p>
+            <p>
+                Spent some time reading about standard streams
+            </p>
+        </article>
+    </body>
+</html>
