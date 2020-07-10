@@ -15,6 +15,10 @@ h1, ul li {
   color: #00004d;
 }
 
+b {
+  color: red;
+}
+
 .date {
   color: #805500;
 }
