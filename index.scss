@@ -55,17 +55,3 @@ a:link, a:visited {
     padding : 5px 10px; 
     text-decoration: none;
 }
-
-span[role=img] {
-    div {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-    }
-    &#main div{
-        background-color: $main;
-    }
-    &#sunsavers div{
-        background-color: $sunsavers;
-    }
-}
