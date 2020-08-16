@@ -3,3 +3,11 @@ $secondary-color : hsl(40, 100%, 25%);
 $alt-color : hsl(300, 100%, 20%); 
 $main-font: "Helvetica"; 
 $main-bg-color: hsl(120, 100%, 95%); 
+$main: hsl(0, 100%, 97%); 
+$sunsavers: hsl(240, 100%, 95%); 
+$weekend: hsl(200, 100%, 70%); 
+
+@mixin turnwhite {
+    background-color: white;
+    transition: background-color .5s; 
+}
