@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>August weekend projects part 1</title>
+        <link rel="stylesheet" href="../css/basic.css">
+    </head>
+    <body>
+        <ul>
+            <li class="date">15th Aug - 16th Aug, 2020</li>
+            <li>
+                <h3>Project 1: React Native(RN) App</h3>
+                <a href="https://github.com/lxierita/RnPractice">https://github.com/lxierita/RnPractice</a>
+                <p>Purpose: to know how does RN allow you to develop cross platform mobile app</p>
+                <p>Tasks 
+                    <ul>
+                        <li>✅ app can run on iphone simulator</li>
+                        <li>✅ app can run on my Huawei phone</li>
+                        <li>❌ app can run on web</li>
+                        <li>❌ app has a backend and fetches data with GraphQL</li>
+                        <li>✅ app modules are bundled</li>
+                    </ul>
+                </p>
+                <p>Stretch Goals
+                    <ul>
+                        <li>❌ app styled using CSS fragmentation (practice for VQ)</li>
+                        <li>❌ app uses storybook plugins</li>
+                    </ul>
+                </p>
+                <h4>Summary</h4>
+                <article>
+                    <p>I spent half a day on this project (sober morning, drunken afternoon). All I can say is that there were a lot of
+                        dependencies issues. First it was the typescript template I try to use and then it was cocoapods dependencies. My knowledge of
+                        installing on file system is zero. I have no idea how to check where the executables and envs are installed, and how does the computer 
+                        decide which one to use when mulitple versions available. I decided the day is too short for me to dive into a topic that seems rather complicated
+                        and broad. So I looked up SunSavers repo and found out that they used a Gemfile to download cocoapods at runtime. I copied the files and had no more building problem.
+                    </p> 
+                    <p>Writing react native code was the easy part, I spent 10 mins reading on RN's official intro to native components and then started writing straight away. 
+                        I was not interested in content but just wanted to check if everything is fine, and it was. Way into the afternoon, I found out my original plan 
+                        was to get it running on Web as well. I downloaded react-native-web then and needed to set up aliases in the module bundler config, in order to 
+                        load react-native-web when I import react-native in files. I used Metro, which was shipped with RN. Looked up the doc and I could not really find 
+                        anything similar to the alias resolver in other module bundlers. So I started to look up webpack's source files, and wanted to find out how is alias resolution implemented. 
+                        Craig found the file for me but I'm not sure that file actually helped me. I will get back to this some time later this weekend (perhaps).
+                    </p>
+                    <p>In general, I'm happy with the half-day effort. I learnt that RN translates the code to native languages at runtime. I now know that you need a server running to start the app. 
+                        Sounds obvious I know, but who the fuck knows what the command is doing when it's called <code>start</code> or <code>run</code>. I did't get to configure 
+                        Gradle because I didn't get that far. I learnt that ios app manages its dependencies through pods.
+                    </p>
+                </article>
+            </li>
+            <li>
+                <h3>Project 2: Back to backend with: Go, Docker and cube problem</h3>
+                <p>Purpose: to not forget about what I've learnt when in MAIN; do some problem solving with code</p>
+                <p>Tasks
+                    <ul>
+                        <li>✅ app can be built and run with Dockerfile</li>
+                        <li>🔛 app solves the cube problem</li>
+                    </ul>
+                </p>
+                <p>Stretch Goals
+                    <ul>
+                        <li>❌ app speaks to database in a container</li>
+                        <li>❌ app uploads assets to a AWS S3 bucket</li>
+                        <li>❌ app uses lambda functions</li>
+                    </ul>
+                </p>
+                <h4>Summary</h4>
+                <article>
+                    <p>
+                        I learnt that there's something called storage driver that lets you store things outside the containers. 
+                        If you wanted your files generated in the containers to persist, you'd need them. I looked into it 
+                        in the first place is because I want to see why my Dockerfile is failing image build. I heard somewhere about 
+                        "ssh into" and thought that's what I needed. But it's only useful when the image is already built successfully. 
+                        In the same way, I learnt that you can open a bash in a running container and interact with it. I read about the Union
+                        file system that docker uses, not sure that I understood much though. The writable layer sounds very useful, i should get back to that 
+                        and checkout what other types of file systems there are. In the end, I still don't know what happened to the intermediate
+                        images when the image build fails. Now that Docker is using Hyperkit instead of VirtualBox, are there any folders somewhere on my machine
+                        that contains the layers info. I'd like to know more about the differences between Hyperkit and VirtualBox as well.
+                    </p>
+                    <p>
+                        Didn't get to do some algorithm practice. Got back touch with Go by writing a function that generates a text file to store the results.
+                        That was fun. 
+                    </p>
+                </article>
+            </li>
+        </ul>
+        <article>
+            <h3>Big Summary</h3>
+            <p>I am not realistic when setting plans, which probably makes me end up doing less because I never wanted more even before I start</p>
+            <p>Main reason behind that is probably because there's simply too much to learn, so I want to cover everything</p>
+            <p>Make compromises to set achievable goals next time. </p>
+        </article>
+    </body>
+</html>
