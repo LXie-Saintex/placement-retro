@@ -57,15 +57,19 @@ a:link, a:visited {
 }
 
 span[role=img] {
+    display: inline-block;
     div {
         display: inline-block;
         width: 20px;
         height: 20px;
+        border: 1px solid gray;
     }
     &#main div{
         background-color: $main;
+        margin-right: 5px;
     }
     &#sunsavers div{
         background-color: $sunsavers;
+        margin-left: 5px;
     }
 }

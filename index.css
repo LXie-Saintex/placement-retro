@@ -57,16 +57,22 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+span[role=img] {
+  display: inline-block;
+}
 span[role=img] div {
   display: inline-block;
   width: 20px;
   height: 20px;
+  border: 1px solid gray;
 }
 span[role=img]#main div {
   background-color: #fff0f0;
+  margin-right: 5px;
 }
 span[role=img]#sunsavers div {
   background-color: #e6e6ff;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
