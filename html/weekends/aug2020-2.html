@@ -15,13 +15,13 @@
             </p>
             <p>
                 When the long weekend started, my plan was to get the backend up and running, and perhaps look into the ticket a little. 
-                I thought this goal realistic and didn't mind doing work things outside work hours, because I'd learn about 
-                Java applications and Kubernetes. I didn't touch on Kubernetes at all instead has spent all hours on running the Java apps. 
+                I thought this goal realistic and didn't mind doing work stuff outside work hours, because I'd learn about 
+                Java applications and Kubernetes. In the end, I didn't touch on Kubernetes at all, instead I had spent all hours on running the Java apps. 
             </p>
             <p>
                 First day, 4 hours effort. I knew what I need to research from the beginning. From the file structure, I can see they use spring framework, 
                 gradle and maven. I looked into it because on sunsavers doc, it says I need to build and run the applications before I can use flyway to 
-                fill up the schemas. I decided to figure out the commands on my own. By the end of the day, I had a JAR file built but execution throws an error
+                fill up the schemas. I decided to figure out the commands for "build and run" on my own. By the end of the day, I had a JAR file built but execution throws an error
             </p>
             <p>
                 Second day, 0 hours 
@@ -32,15 +32,17 @@
                 After reading about gradle build script I decided to start my own gradle project (<a href="https://github.com/lxierita/gradling">https://github.com/lxierita/gradling</a>)
                 , and add the mentioned frameworks/tools gradually. I added spring and learnt how <code>buildscript</code> works. I have not looked into the concept, 
                 "Maven / IVY- compatible repositories or filesystem". It sounds very bare metal to me because repos and filesystems do not sound like techonologies. But I remembered that 
-                technology like Docker has its own filesystem and storage driver, which sounds like a whole other field to explore. 
-                I learnt how to list gralde tasks and use <code>:bootRun</code> to start a Java application. 
+                Docker and its storage driver, which is something I should definitely get back to. Now that this is happening, I'll do a comparison between Maven/Ivy and Docker filesystems.
+                Since I have no idea what they are at this point, I only hope that there are some commonalities or relations between the two 😂. (relations as in, 
+                one doesn't do something good enough, so the other came about. Or, one is a complementary to the other due to platform or other restrictions)
+                I learnt how to list gradle tasks and use <code>:bootRun</code> to start a Java application. 
             </p>
             <p>
                 Fourth day, 0 hours
             </p>
             <p>
                 At the time of writing, I had had help from Petar who says the error I'm getting just requires some environment variables set up. There are now a lot of 
-                envs in my <code>~/.zshrc</code>. I cannot run the apps without them but most of them do not even have the real values in. 
+                envs in my <code>~/.zshrc</code>. I cannot run the apps without them but most of them do not even have meaningful values. 
                 Is it inevitable to have such chaotic configuration when using these tools? or did they just do it wrong?
             </p>
             <p>
@@ -52,10 +54,10 @@
             </p>
             <p>
                 Tips for self 
-                <ol>
-                    <p>Ask for answers if too many moving parts (reversed learning afterwards)</p>
-                    <p>repo as a testing tool is a good idea</p>
-                </ol>
+                <ul>
+                    <li>Ask for answers if too many moving parts (reversed learning afterwards)</li>
+                    <li>repo as a testing tool is a good idea</li>
+                </ul>
             </p>
         </article>
     </body>
