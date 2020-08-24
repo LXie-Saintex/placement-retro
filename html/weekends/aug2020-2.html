@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>August weekend projects part 2</title>
+        <link rel="stylesheet" href="../../css/basic.css">
+    </head>
+    <body>
+        <li class="date">21th Aug - 23th Aug, 2020</li>
+        <article>
+            <p>
+                Probably the least productive days I've had in 2020
+            </p>
+            <p>
+                I'd say the time I spent on actual coding was about a day. But this one day effort has been so painfully bad that I 
+                am doing a writeup just to clear my mind up. 
+            </p>
+            <p>
+                When the long weekend ended, my plan was to get the backend up and running, and perhaps look into the ticket a little. 
+                I thought this goal realistic and okay because even though I am doing work things outside work hours, I get to learn about 
+                Java applications and Kubernetes. I didn't touch on Kubernetes at all instead has spent all hours on running the Java apps. 
+            </p>
+            <p>
+                First day, 4 hours effort. I knew what I need to research from the beginning. From the file structure, I can see they use spring framework, 
+                gradle and maven. I looked into it because on sunsavers doc, it says I need to build and run the applications before I can use flyway to 
+                fill up the schemas. I decided to figure out the commands on my own. By the end of the day, I had a JAR file built but execution throws an error
+            </p>
+            <p>
+                Second day, 0 hours 
+            </p>
+            <p>
+                Third day, 3 hours effort. So why is it not running. I looked at the error messages. <code>FILE_LOG_PATTERN_IS_UNDEFINED</code> and some aws beans instantiation
+                errors. I thought that in order to understand the dependencies errors, I need to know how gradle wires up dependencies and where lies the configuration files.
+                After reading about gradle build script I decided to start my own gradle project (<a href="https://github.com/lxierita/gradling">https://github.com/lxierita/gradling</a>)
+                , and add the mentioned frameworks/tools gradually. I added spring and learnt how <code>buildscript</code> works, although I have not looked into the concept, 
+                "Maven / IVY- compatible repositories or filesystem". It sounds very bare metal to me because repos and filesystems do not sound like techonologies. 
+                I learnt how to list tasks and use <code>:bootRun</code> to start a Java application with gradle. 
+            </p>
+            <p>
+                Fourth day, 0 hours
+            </p>
+            <p>
+                At the time of writing, I had help from Petar who says the error I'm getting just requires some environment variables set up. There are now a lot of 
+                configuration in my <code>~/.zshrc</code>. They are necessary for running the apps but most of them do not even have the real values in. 
+                Is it inevitable to have such chaotic configuration when using these tools? I think it's worth finding out. 
+            </p>
+            <p>
+                Going back the purpose of this writing. I was feeling very doubtful as the solutions to my problems are often non-solutions, but instead are requirements/prerequisites. 
+                It's frustrating because I had problem-solving in mind when started researching. When I failed to provide the solution, it becomes very real that what I've found through research
+                are very superficial. I could start a side project to carry out further learning, but it would be a project with no explicit goals because I don't know about
+                this kind of applications. It's definitely wrong to do a structured learning project this time as I don't have much guidance. I can still use the new gradle repo as a playground though. 
+                I can make sure that I understood every single line of code in that repo and so make it a convenient testing tool.
+            </p>
+            <p>
+                Tips for self 
+                <ul>
+                    <p>Ask for answers if too many moving parts (reversed learning afterwards)</p>
+                    <p>repo as a testing tool is a good idea</p>
+                </ul>
+            </p>
+        </article>
+    </body>
+</html>
