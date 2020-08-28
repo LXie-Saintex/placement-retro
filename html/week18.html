@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Week 18 retro</title>
+        <link rel="stylesheet" href="../css/basic.css">
+    </head>
+    <body>
+        <h1>Week 18</h1>
+        <ul>
+            <li class="date">24th Aug - 28th Aug, 2020</li>
+            <li class="team">Placement team: Sun Savers</li>
+            <li>
+                <p>Task: improve cleanup of dev env<a href="https://nidigitalsolutions.jira.com/browse/SVRS-2417">https://nidigitalsolutions.jira.com/browse/SVRS-2417</a></p>
+                <p>what I've learnt</p>
+                <ul>
+                    <li>bash scripting in alpine linux</li>
+                    <li>jq</li>
+                    <li>ssh into containers</li>
+                    <li>git submodule</li>
+                    <li>circleCI: workflow, executors</li>
+                    <li>K8s: control plane; data plane</li>
+                </ul>
+            </li>
+            <li>
+                <p>Things I learned on my own</p>
+                <ul>
+                    <li>
+                        CSS fragmentation: paged media, columns, box-decoration-break, orphans and widows
+                    </li>
+                    <li>
+                       @font-face, woff (very superficial)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <article>
+            <p>Things I enjoyed most this week: jq, bash scripting in alpine linux</p>
+            <p>
+               Started to work on the ticket on Monday. I was explicitly told with to do with two of the subtasks, so the only thing left for me tackle was delete the DNS endpoints in Route53
+               created by deployment. Took about a whole morning to figure out how to use git submodule. Kristina walked me through the commands to use to get aws resources listed on my local machine. 
+               I had no idea what she was doing when demonstrating, but it was helpful in that it gave me something to look at and research. I started to read about how K8s works, but again it was just too abstract. 
+            </p>
+            <p>
+                On Tuesday I started to work on deleting the DNS endpoints, I first checked that Route53 commands and learnt what are hosted zones and records. I had a basic idea of what to do by the end of the day. 
+                I also spent the rest of the day trying to understand some existing bash scripts and the circleCI configuration.
+            </p>
+            <p> 
+                Half of this Wednesday was spent on preparing the demon for beginners' club. I researched on CSS fragmentation and demoed <code>box-decoration-break</code>. Still not sure how orphans and widows work. 
+                I had started to write a new bash script to delet the records but not sure which executor to use. 
+            </p>
+            <p>
+                The rest of the week was spent on wrestling with jq syntax. I'm pretty sure that I used --slurpfile correctly but the variable was just not reading from the newly created json files. I used jq's map function in the end
+                but I have set up a side project to recreate the --slurpfile problem in order to find out why. I followed Kristina's advice to write some test code first and it has been fun. When I implemented the changes on Friday, 
+                the script worked but there is some error-handling left to do. will be doing that next Monday. 
+            </p>
+            <p>
+                On both Thursday and Friday evenings, I went through my previous mock exams on Measureup to revise for VQ. I'm supposed to be ready for this by the next Monday, 
+                where I'm also expected to submit my first portfolio draft. Might have to move the VQ date further, but I'm reluctant to do so. It's a pain in the arse and I want to get it out of the way.
+                So I might spend sometime this weekend to work on it.
+            </p>
+            <p>
+                My tech debt is piling up. 
+            </p>
+        </article>
+    </body>
+</html>
