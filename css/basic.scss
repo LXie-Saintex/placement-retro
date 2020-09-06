@@ -5,7 +5,10 @@ body {
     padding: 20px;
     font-family: $main-font;
 }
-
+code {
+    color: gray;
+    padding: 0 5px;
+}
 article {
     border: .5px dotted $primary-color;
     padding: 10vw;
