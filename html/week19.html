@@ -21,9 +21,9 @@
         <article>
             <p>Things I enjoyed most this week: AWS SDK, writing up portfolio</p>
             <p>
-               Finished my last task on Wednesday. DNS points could be deleted safely with some error handling. The terraform cleanup part of the ticket was singled out to be a different task, 
-               because according to Kristina, it turns out to be a bigger problem than imagined. Both the dynamic states files on S3 and the lock entries on DynamoDB need to be deleted, I guess
-               simultaneously, as one without the other cause problems. I thought it'd be a good evidence for satisfying the standad point of speaking to Database so asked to work on this. 
+               Finished my last task on Wednesday. The DNS endpoints on Route53 are now deleted, and no error is thrown when 0 records, but respective error messages show up if the records or characters amount exceeds the maximum limit.
+               The terraform cleanup part of the ticket was singled out to be a different task, because according to Kristina, it turns out to be a bigger problem than imagined. Both the dynamic states files on S3 and the lock entries on DynamoDB need to be deleted,
+               I guess, simultaneously as one without the other cause problems. I thought it'd be a good evidence for satisfying the standad point of speaking to Database so asked to work on this.
                Kristina also suggested another ticket to me that deletes an empty table in SQL <a href="https://nidigitalsolutions.jira.com/browse/SVRS-2310">https://nidigitalsolutions.jira.com/browse/SVRS-2310</a>
                , which I plan to work on if no one picked it up when I finished terraform cleanup.
             </p>
