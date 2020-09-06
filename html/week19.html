@@ -9,7 +9,7 @@
             <li class="date">31th Aug - 4th Sep, 2020</li>
             <li class="team">Placement team: Sun Savers</li>
             <li>
-                <p>Task: improve cleanup of dev env - terraform<a href="https://nidigitalsolutions.jira.com/browse/SVRS-2512">https://nidigitalsolutions.jira.com/browse/SVRS-2512</a></p>
+                <p>Task: improve cleanup of dev env - terraform <a href="https://nidigitalsolutions.jira.com/browse/SVRS-2512">https://nidigitalsolutions.jira.com/browse/SVRS-2512</a></p>
                 <p>what I've learnt</p>
                 <ul>
                     <li>Shell script: error-handling</li>
@@ -19,8 +19,7 @@
             </li>
         </ul>
         <article>
-            <p>Things I enjoyed most this week: AWS SDK</p>
-            <p>Things I enjoyed most this week: writing up portfolio</p>
+            <p>Things I enjoyed most this week: AWS SDK, writing up portfolio</p>
             <p>
                Finished my last task on Wednesday. DNS points could be deleted safely with some error handling. The terraform cleanup part of the ticket was singled out to be a different task, 
                because according to Kristina, it turns out to be a bigger problem than imagined. Both the dynamic states files on S3 and the lock entries on DynamoDB need to be deleted, I guess
@@ -33,15 +32,17 @@
                 to book exam early in the coming week. 
             </p>
             <p> 
-                I wrote about 3 projects and benefited greatly from the process, where I pieced everything together. VQ is pointless as usual but once in a while it surprises you with its coverage with random
+                I wrote about 3 projects and benefited greatly from the process where I pieced everything together. VQ was pointless as usual but once in a while it surprises you with its coverage of random
                 facts. 
             </p>
             <p>
-                I feel deeply that Bash is the wrong tool for the tasks, especially the coming one where error-handling is more crucial. The code needs to guarantee that the state file and the corresponding lock entry shoul be deleted 
-                around the same time (is that true?). It needs to be a sequential process where a failed attempt is retried until succeed, rather than skipped (or I could recollect the failed ones, and retry in a batch???). Shell scripts were impossible to test and becomes messy once the logic gets slightly complicated.
-                Not to mention that each line of command is not reusable either. I had to test the commands in the containers, which created many senseless commits (above 80). (Another thing to look into perhaps,
-                and the commits were not squashed after merging, all ~80 commits showed when I <code>git log</code>). To avoid the same experience with my current task, I tried to set up AWS authentication locally but I was not well supported by whoever was in charge😒. 
-                In the end, I just asked Svetlin for the key and secret and decided to test the commands with AWS SDK for Go.  
+                I feel deeply that Bash is the wrong tool for the tasks, especially the coming one where error-handling is more crucial. The code needs to guarantee that the state file and the corresponding lock entry are deleted
+                around the same time (is that true?). It needs to be a sequential process where a failed attempt is retried until succeed, rather than skipped (or I could ignore the failure, collect all the failed ones and retry in a batch???).
+                Shell scripts are impossible to test and becomes messy once the logic gets slightly complicated, partly because the code is not reusable unless exported as variables. I had to test the commands in the containers,
+                which created many senseless commits (above 80). Here's another thing to look into perhaps, the commits were not really squashed when merging, even thought I clicked on <code>Squash and merge</code>.
+                All ~80 commits showed up when I <code>git log</code>. Back to the topic, for testing in the containers, I had to repeatedly copy and paste the vars exported by the CI jobs, part of the shell scripts that authenticates, and finally the actual command that causes the problem.
+                And how do I find out which commands are the troublemakers? Ta-da, the program exits when error occurs 🙂, so now I get to do the same thing all over again just to reproduce the environment. To avoid having the same experience with my current task,
+                I tried to set up AWS authentication locally but I was not well supported by whoever was in charge 😒.  In the end, I just asked Svetlin for the key and secret and decided to test the commands with AWS SDK for Go.
             </p>
         </article>
     </body>
