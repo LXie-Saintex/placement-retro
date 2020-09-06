@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Week 19 retro</title>
+        <link rel="stylesheet" href="../css/basic.css">
+    </head>
+    <body>
+        <h1>Week 19</h1>
+        <ul>
+            <li class="date">31th Aug - 4th Sep, 2020</li>
+            <li class="team">Placement team: Sun Savers</li>
+            <li>
+                <p>Task: improve cleanup of dev env - terraform<a href="https://nidigitalsolutions.jira.com/browse/SVRS-2512">https://nidigitalsolutions.jira.com/browse/SVRS-2512</a></p>
+                <p>what I've learnt</p>
+                <ul>
+                    <li>Shell script: error-handling</li>
+                    <li>CircleCI: context</li>
+                    <li>AWS SDK 😲</li>
+                </ul>
+            </li>
+        </ul>
+        <article>
+            <p>Things I enjoyed most this week: AWS SDK</p>
+            <p>Things I enjoyed most this week: writing up portfolio</p>
+            <p>
+               Finished my last task on Wednesday. DNS points could be deleted safely with some error handling. The terraform cleanup part of the ticket was singled out to be a different task, 
+               because according to Kristina, it turns out to be a bigger problem than imagined. Both the dynamic states files on S3 and the lock entries on DynamoDB need to be deleted, I guess
+               simultaneously, as one without the other cause problems. I thought it'd be a good evidence for satisfying the standad point of speaking to Database so asked to work on this. 
+               Kristina also suggested another ticket to me that deletes an empty table in SQL <a href="https://nidigitalsolutions.jira.com/browse/SVRS-2310">https://nidigitalsolutions.jira.com/browse/SVRS-2310</a>
+               , which I plan to work on if no one picked it up when I finished terraform cleanup.
+            </p>
+            <p>
+                I spent the afternoons to work on the apprenticeship obligations, including first draft of portfolio and VQ. I have submitted the first draft and reached ~80% on VQ. I should be ready 
+                to book exam early in the coming week. 
+            </p>
+            <p> 
+                I wrote about 3 projects and benefited greatly from the process, where I pieced everything together. VQ is pointless as usual but once in a while it surprises you with its coverage with random
+                facts. 
+            </p>
+            <p>
+                I feel deeply that Bash is the wrong tool for the tasks, especially the coming one where error-handling is more crucial. The code needs to guarantee that the state file and the corresponding lock entry shoul be deleted 
+                around the same time (is that true?). It needs to be a sequential process where a failed attempt is retried until succeed, rather than skipped (or I could recollect the failed ones, and retry in a batch???). Shell scripts were impossible to test and becomes messy once the logic gets slightly complicated.
+                Not to mention that each line of command is not reusable either. I had to test the commands in the containers, which created many senseless commits (above 80). (Another thing to look into perhaps,
+                and the commits were not squashed after merging, all ~80 commits showed when I <code>git log</code>). To avoid the same experience with my current task, I tried to set up AWS authentication locally but I was not well supported by whoever was in charge😒. 
+                In the end, I just asked Svetlin for the key and secret and decided to test the commands with AWS SDK for Go.  
+            </p>
+        </article>
+    </body>
+</html>
