@@ -42,7 +42,7 @@
                 which created many senseless commits (above 80). Here's another thing to look into perhaps, the commits were not really squashed when merging, even though I clicked on <code>Squash And Merge</code>.
                 All ~80 commits showed up when I <code>git log</code>. Back to the topic, for testing in the containers, I had to repeatedly copy and paste the vars exported by the CI jobs, part of the shell scripts that authenticates, and finally the actual command that causes the problem.
                 And how do I find out which commands are the troublemakers? Ta-da, the program exits when error occurs 🙂, so now I get to do the same thing all over again just to reproduce the environment. To avoid having the same experience with my current task,
-                I tried to set up AWS authentication locally but I was not well supported by whoever was in charge 😒.  In the end, I just asked Svetlin for the key and secret and decided to test the commands with AWS SDK for Go.
+                I tried to set up AWS authentication locally but that didn't go well either.  In the end I asked Svetlin for the key and secret and will try the commands out locally from now on. 
             </p>
         </article>
     </body>
