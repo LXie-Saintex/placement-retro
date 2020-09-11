@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Week 20 retro</title>
+        <link rel="stylesheet" href="../css/basic.css">
+    </head>
+    <body>
+        <h1>Week 20</h1>
+        <ul>
+            <li class="date">7th Sep - 11th Sep, 2020</li>
+            <li class="team">Placement team: Sun Savers</li>
+            <li>
+                <p>Task: improve cleanup of dev env for terraform<a href="https://nidigitalsolutions.jira.com/browse/SVRS-2512">https://nidigitalsolutions.jira.com/browse/SVRS-2512</a></p>
+                <p>what I've learnt</p>
+                <ul>
+                    <li>Terraform: state file corruption</li>
+                    <li>Exponential backoff</li>
+                </ul>
+            </li>
+            <li>
+                <p>Things I learned through VQ</p>
+                <ul>
+                    <li>
+                        JS prototype and constructor
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Things I learnt through writing portfolio</p>
+                <ul>
+                    <li>PaaS and SaaS</li>
+                    <li>Hosted solution</li>
+                    <li>Orchestration</li>
+                    <li>
+                        <p>What does MAIN do</p>
+                        <ul>
+                            <li>identity management</li>
+                            <li>Identity and Access Platform</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <article>
+            <p>Things I enjoyed most this week: exponential backoff, what does MAIN do</p>
+            <p>
+                Started to work on terraform cleanup since Monday. It's largely similar to the previous task just with different commands.
+                The error-handling is slighly more intricate, which was fun for me as I got to learn about exponential backoff. I'm particularly
+                happy with <a href="https://github.com/newsuk/sun-savers-services-core-build/pull/37/files#diff-588d95cc931853ba62fb4b13eab6375aR15-R34">how I implemented it</a>,
+                but probably will never find out if it works (unless I set up a database and inserts records like maniac and then batch delete them). 
+                I find that if I started the task with a structure in mind (as in, the exact steps to be taken and the results and errors to be expected),
+                the refactoring comes naturally and sometimes so explicit(as an error) that it moves me with its beauty 😅. 
+            </p>
+            <p>
+                JS learning was good. I learnt about the prototype chain a long time ago and pretty sure nothing registered. The MDN docs make more sense when I look at it now,
+                and I could understand the intricates a bit better, such as reassigning the constructor to the child after inheritng the prototype methods from the parent.
+                I find myself starting to appreciate Javascript as an entity(that has its own characteristics and ways of reasoning) as I'm getting more familiar with it.
+            </p>
+            <p>
+                Writing the portfolio gave me a great change to look at MAIN's architecture and the business context. I don't mind exploring any field of knowledge as long as it's well-regimented and open.
+                My cynicism surfaces when a field has become self-obsessive and start to set high barriers for outsiders and make it difficult to onboard.
+            </p>
+        </article>
+    </body>
+</html>
