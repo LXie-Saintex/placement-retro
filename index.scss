@@ -21,7 +21,7 @@ ul {
         border-bottom: 10px solid white; 
         border-right: 10px solid white; 
         
-        &.todo {
+        &.todos, &.leftovers {
             background-color: whitesmoke;
         }
         &.main {
