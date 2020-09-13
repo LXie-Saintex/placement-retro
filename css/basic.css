@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Bitstream Vera Serif Bold";
   src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
@@ -42,6 +43,16 @@ b {
 
 .date, .team {
   font-size: 1.3em;
+}
+
+li .weeklies::before, li .weeklies::after {
+  content: "🌝";
+  padding: 2px;
+}
+
+li .weekons::before, li .weekons::after {
+  content: "🌚";
+  padding: 2px;
 }
 
 /*# sourceMappingURL=basic.css.map */

@@ -39,3 +39,17 @@ b {
 .date, .team {
     font-size: 1.3em;
 }
+
+li .weeklies {
+    &::before, &::after{
+        content: "🌝";
+        padding: 2px;
+    }
+}
+
+li .weekons {
+    &::before, &::after{
+        content: "🌚";
+        padding: 2px;
+    }
+}
