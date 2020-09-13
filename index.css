@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Bitstream Vera Serif Bold";
+  font-family: "Bitstream Vera Serif Bold", Helvetica;
   src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
 }
 body {
@@ -25,7 +25,7 @@ ul li {
   border-bottom: 10px solid white;
   border-right: 10px solid white;
 }
-ul li.todo {
+ul li.todos, ul li.leftovers {
   background-color: whitesmoke;
 }
 ul li.main {
