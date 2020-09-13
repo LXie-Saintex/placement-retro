@@ -81,3 +81,13 @@ li .weeklies {
         }    
     }
 }
+
+.leftovers li{
+    list-style-type: none;
+    &::before {
+        content: "👉🏼";
+        padding: 2px;
+        margin-right: 5%;
+        font-size: 1.2em;
+    }
+}

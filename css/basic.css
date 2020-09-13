@@ -82,4 +82,14 @@ li .weeklies::before, li .weeklies::after {
   font-size: 1.2em;
 }
 
+.leftovers li {
+  list-style-type: none;
+}
+.leftovers li::before {
+  content: "👉🏼";
+  padding: 2px;
+  margin-right: 5%;
+  font-size: 1.2em;
+}
+
 /*# sourceMappingURL=basic.css.map */
