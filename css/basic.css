@@ -21,6 +21,10 @@ article {
   line-height: 1.5;
 }
 
+section:nth-of-type(2) {
+  margin-top: 10vw;
+}
+
 h1, ul li {
   color: #00004d;
 }
@@ -31,6 +35,11 @@ ul li {
 
 b {
   color: red;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .date {
@@ -45,14 +54,32 @@ b {
   font-size: 1.3em;
 }
 
+li .weeklies {
+  list-style-type: none;
+}
 li .weeklies::before, li .weeklies::after {
   content: "🌝";
   padding: 2px;
 }
 
-li .weekons::before, li .weekons::after {
+.todos {
+  list-style-type: none;
+  margin: 10vh auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.todos .weeklies::before {
+  content: "🌝";
+  padding: 2px;
+  margin-right: 5%;
+  font-size: 1.2em;
+}
+.todos .weekons::before {
   content: "🌚";
   padding: 2px;
+  margin-right: 5%;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=basic.css.map */
