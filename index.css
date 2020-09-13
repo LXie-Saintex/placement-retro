@@ -26,7 +26,7 @@ ul li {
   border-right: 10px solid white;
 }
 ul li.todos, ul li.leftovers {
-  background-color: whitesmoke;
+  background-color: silver;
 }
 ul li.main {
   background-color: #fff0f0;
