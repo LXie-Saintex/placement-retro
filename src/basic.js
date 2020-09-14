@@ -23,10 +23,20 @@ function addLeftoversSymbols (){
             item.innerHTML = Symbology.work + content; 
         }
 
-        if ( itemClasses.includes("christ") ) {
+        if ( itemClasses.includes("have_to_do") ) {
             let content = item.textContent;
             item.textContent = Symbology.have_to_do + content; 
         }
+        if ( itemClasses.includes("brain_food") ) {
+            let content = item.textContent;
+            item.textContent = Symbology.brain_food + content; 
+        }
+
+        if ( itemClasses.includes("asap") ) {
+            let content = item.textContent;
+            item.textContent = Symbology.asap + content; 
+        }
+
     }
 }
 
