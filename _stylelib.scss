@@ -3,16 +3,10 @@
     src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
   }
 
-$primary-color : hsl(240, 100%, 15%); 
-$secondary-color : hsl(40, 100%, 25%); 
-$alt-color : hsl(300, 100%, 20%); 
-$main-font: "Bitstream Vera Serif Bold"; 
-$main-bg-color: hsl(120, 100%, 95%); 
-$main: hsl(0, 100%, 97%); 
-$sunsavers: hsl(240, 100%, 95%); 
-$weekend: hsl(200, 100%, 70%); 
-
-@mixin turnwhite {
-    background-color: white;
-    transition: background-color .5s; 
-}
+$bg: #121212; 
+$overlay: #272727;
+$primary: #bb86fc;
+$primary-variant: #3700b3; 
+$secondary: #03dac5; 
+$text: whitesmoke; 
+$error: #cf6679; 

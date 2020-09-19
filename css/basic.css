@@ -5,17 +5,19 @@
 }
 body {
   width: 70vw;
-  padding: 20px;
-  font-family: "Bitstream Vera Serif Bold";
+  background-color: #121212;
+  color: whitesmoke;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 code {
-  color: gray;
+  color: #03dac5;
   padding: 0 5px;
 }
 
 article {
-  border: 0.5px dotted #00004d;
+  background-color: #272727;
   padding: 10vw;
   margin: 50px auto;
   line-height: 1.5;
@@ -25,23 +27,19 @@ section:nth-of-type(2) {
   margin-top: 10vw;
 }
 
-h1, ul li {
-  color: #00004d;
-}
-
 ul li {
   line-height: 1.5;
 }
 
 b {
-  color: red;
+  color: #cf6679;
 }
 
 img {
   width: 60%;
   padding: 10px;
   margin: 10px;
-  background-color: lightgray;
+  background-color: #3700b3;
   border-radius: 5px;
   clear: both;
 }
@@ -52,11 +50,11 @@ img {
 }
 
 .date {
-  color: #805500;
+  color: #03dac5;
 }
 
 .team {
-  color: #660066;
+  color: #bb86fc;
 }
 
 .date, .team {

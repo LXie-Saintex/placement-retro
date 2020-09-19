@@ -1,62 +1,61 @@
 @import "stylelib"; 
 
 body {
-    width : 90vw;
+    width : 97vw;
     margin : 0 auto; 
     padding: 10vh 0; 
-    font-family: $main-font;
+    background-color: $bg;
+    color: $text; 
 }
 ul {
     list-style-type: none;
+    background-color: $overlay;
     line-height: 2.0;
-    margin-top: 50px; 
-    padding: 0;
+    margin: 50px auto 0; 
+    padding: 100px;
+    width: 85%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     li {
         display : block;
-        width: 25vw;
-        padding: 5px 0;
-        border-bottom: 10px solid white; 
-        border-right: 10px solid white; 
-        
-        &.todos, &.leftovers {
-            background-color: silver;
-        }
+        width: 30%;
+        padding: 8px 0;
+        margin: 10px;
+        border-radius: 5px;
+
         &.main {
-            background-color: $main;
-            &:hover {
-                @include turnwhite
-            }
+            border: 5px solid $primary;
         }
+
         &.sunsavers {
-            background-color: $sunsavers;
-            &:hover {
-                @include turnwhite
-            }
+            border: 5px solid $primary-variant;
         }
-        &.weekend {
-            background-color: $weekend;
-            &:hover {
-                @include turnwhite
-            }
-            a {
-                font-size: 1em; 
-            }
+
+        &.todos, &.weekend, &.leftovers {
+            border: 5px solid $secondary; 
         }
-    }
-    
-}
-a:link, a:visited {
-    display : inline-block;
-    color : $primary-color; 
-    width: 100%; 
-    font-size : 1.5em; 
-    padding : 5px 10px; 
-    text-decoration: none;
+
+        a:link, a:visited {
+            display : inline-block;
+            width: 100%; 
+            color: $text; 
+            font-size : 1.5em; 
+            padding : 5px 10px; 
+            text-decoration: none;
+        }
+    } 
 }
 
+.teams {
+    position: sticky;
+    background-color: $bg;
+    padding: 10px;
+    top: 0; 
+    left: 0;
+    z-index: 2;
+}
 span[role=img] {
     display: inline-block;
     div {
@@ -66,11 +65,15 @@ span[role=img] {
         border: 1px solid gray;
     }
     &#main div{
-        background-color: $main;
+        background-color: $primary;
         margin-right: 5px;
     }
     &#sunsavers div{
-        background-color: $sunsavers;
+        background-color: $primary-variant;
+        margin-left: 5px;
+    }
+    &#others div{
+        background-color: $secondary;
         margin-left: 5px;
     }
 }
