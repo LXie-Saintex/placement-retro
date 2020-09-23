@@ -41,7 +41,7 @@ ul li.todos, ul li.weekend, ul li.leftovers {
 ul li a:link, ul li a:visited {
   display: inline-block;
   width: 100%;
-  color: whitesmoke;
+  color: greenyellow;
   font-size: 1.5em;
   padding: 5px 10px;
   text-decoration: none;
