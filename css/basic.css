@@ -32,6 +32,11 @@ ul li {
   line-height: 1.5;
 }
 
+a:link, a:visited {
+  color: greenyellow;
+  padding: 0 2px;
+}
+
 b {
   color: #cf6679;
 }
