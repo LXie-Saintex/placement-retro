@@ -12,7 +12,8 @@ body {
 }
 
 code {
-  color: #3700b3;
+  color: white;
+  background-color: #121212;
   padding: 0 5px;
 }
 
