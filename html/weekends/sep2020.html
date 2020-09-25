@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>September weekon: Makers ER app</title>
+        <link rel="stylesheet" href="../../css/basic.css">
+    </head>
+    <body>
+        <li class="date">25th Sep - 27th Sep, 2020</li>
+        <article>
+            <p>See description at README: <a href="https://github.com/lxierita/makers-employer-reference">https://github.com/lxierita/makers-employer-reference</a></p>
+            <p>See notes at: <a href="../notes.html#mer">Notes on the MER app</a></p>
+            <p>Plan</p>
+            <ol>
+                <li>
+                    <h2>25th Sep night</h2>
+                    <p>What: 
+                        <ul>
+                            <li>Determines which AWS resources to use, how cloud-native this app will be</li>
+                            <li>Determines if use K8s</li>
+                            <li>Determines if use Terraform</li>
+                            <li>✅ Determines if use AWS Lambda: Yes</li>
+                        </ul>
+                    </p>
+                    <p>How: 
+                        <ul>
+                            <li>Book: AWS Certified Solutions Architect Official Study Guide</li>
+                            <li>Sites: <a href="https://docs.aws.amazon.com/index.html">https://docs.aws.amazon.com/index.html</a></li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h2>26th Sep</h2>
+                    <p>What: Complete frontend MVP
+                        <ul>
+                            <li>User can log in to see the app</li>
+                            <li>UI has a navigation menu</li>
+                            <li>The menus lists 18 standard pts</li>
+                            <li>Each pt section has evidence</li>
+                            <li>User can comment on each pt section, <b>NOT</b> on each evidence</li>
+                            <li>User can delete own comments</li>
+                            <li>User can see the author of the comments</li>
+                            <li>Each evidence contains screenshots</li>
+                            <li>Each screenshot contains description</li>
+                        </ul>
+                    </p>
+                    <p>How: 
+                        <ul>
+                            <li>Site: Elm</li>
+                            <li>Repos: past projects/li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h2>27th Sep</h2>
+                    <p>What: Store in and Deploy to cloud
+                        <ul>
+                            <li>can retrieve comments from storage</li>
+                            <li>can create and store new comments</li>
+                            <li>can authenticate the user</li>
+                            <li>app accessible via Internet: e.g. Craig can log in and view the evidence and comment</li>
+                        </ul>
+                    </p>
+                    <p>How: 
+                        <ul>
+                            <li>AWS SDK for Go</li>
+                            <li>AWS lambda</li>
+                            <li>one of the AWS storage services</li>
+                        </ul>
+                    </p>
+                </li>
+            </ol>
+        </article>
+    </body>
+</html>
