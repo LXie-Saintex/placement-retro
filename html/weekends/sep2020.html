@@ -64,10 +64,21 @@
                     <h2>27th Sep</h2>
                     <p>What: Store in and Deploy to cloud
                         <ul>
-                            <li>can retrieve comments from storage</li>
-                            <li>can create and store new comments</li>
-                            <li>can authenticate the user</li>
-                            <li>app accessible via Internet: e.g. Craig can log in and view the evidence and comment</li>
+                            <li>❌ can retrieve comments from storage</li>
+                            <li>❌ can create and store new comments</li>
+                            <li>❌ can authenticate the user</li>
+                            <li>❌ app accessible via Internet: e.g. can log in and view the evidence and comment</li>
+                        </ul>
+                    </p>
+                    <p>What v2: cloud-native backend
+                        <ul>
+                            <li>Elm app hosted on Amplify</li>
+                            <li>➡️ CirlceCI configured to use aws resources</li>
+                            <li>✅ RestAPI spec written in Swagger</li> 
+                            <li>Lambdas hosted on AWS</li> 
+                            <li>RestAPI connected with Lambdas via API Gateway</li>
+                            <li>DynamoDB table that has 18 items</li>
+                            <li>images stored in S3</li>
                         </ul>
                     </p>
                     <p>How: 
