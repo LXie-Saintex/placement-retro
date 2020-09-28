@@ -28,32 +28,54 @@
         <section id="mer">
             <h2>MER: Makers Employer Reference App</h2>
             <ul>
-                <li>which AWS services do I need to make the app cloud native</li>
-                <li>which type do I use in Elm: document, element, or application</li>
-                <li>Do I compile the app to html or js</li>
-                <li>Does it make a new http request everytime someone click on the navbar</li>
-                <li>Elm type signature: the whole thing is the type, not the result. 
-                    <b>How do I get from point A to point B then?</b>
-                    <img src="../assets/images/elm-type-signature.png">
+                <li>
+                    <p>Elm</p>
+                    <ul>
+                        <li>which type do I use in Elm: document, element, or application</li>
+                        <li>Do I compile the app to html or js</li>
+                        <li>Does it make a new http request everytime someone click on the navbar</li>
+                        <li>Elm type signature: the whole thing is the type, not the result. 
+                            <b>How do I get from point A to point B then?</b>
+                            <img src="../assets/images/elm-type-signature.png">
+                        </li>
+                        <li>Elm vscode plugin error hightlighting don't always work</li>
+                        <li>how I imagine the program should handle it is not how it turnt out.my mind requires a whole view whereas the whole view ^^^ is in fact the entry point.
+                            <img src="../assets/images/elm-useless-wrap.png">
+                        </li>
+                        <li>When to use the Browser package in Elm?</li>
+                    </ul>
                 </li>
-                <li>Elm vscode plugin error hightlighting don't always work</li>
-                <li>how I imagine the program should handle it is not how it turnt out
-                    <img src="../assets/images/elm-useless-wrap.png">
-                    my mind requires a whole view whereas the whole view ^^^ is in fact the entry point
-                </li>
-                <li>When to use the Browser package in Elm?</li>
-                <li>I've been driving with eyes closed all day without a backend to help with testing</li>
-                <li>do I start an aws session with each service or is one enough</li>
-                <li>the benefits of sharedConfigState enabled -> AWS_SDK_LOAD_CONFIG -> session could load from credentials AND config</li>
-                <li>IAM user and IAM role are different things</li>
-                <li>Access key id & secret access key: which is the key, and which the value</li>
-                <li>Are database initially created with code? what happened with those code</li>
-                <li>dynamodb createTableInput: attributes list include nested attributes? difference between key schema and attribute list?</li>
-                <li>create a table of items that are documents; top level namespace in a table is item, so why declare Attribute rather than Item</li>
-                <li>is the schema for each item rather than each table</li>
-                <li>is the key schema a list of attributes that are primary keys?</li>
-                <li>Configure AWS services with UI or code?</li>
+                <li>
+                    <p>AWS services</p>
+                    <ul>
+                        <li>IAM user and IAM role are different things</li>
+                        <li>which AWS services do I need to make the app cloud native</li>
+                        <li>do I start an aws session with each service or is one enough</li>
+                        <li>the benefits of sharedConfigState enabled -> AWS_SDK_LOAD_CONFIG -> session could load from credentials AND config</li>
+                        <li>Access key id & secret access key: which is the key, and which the value</li>
+                        <li>Configure AWS services with UI or code?</li>
+                        <li>
+                            <p>DynamoDB</p>
+                            <ul>
+                                <li>Are database initially created with code? what happened with those code</li>
+                                <li>dynamodb createTableInput: attributes list include nested attributes? difference between key schema and attribute list?</li>
+                                <li>create a table of items that are documents; top level namespace in a table is item, so why declare Attribute rather than Item</li>
+                                <li>is the schema for each item rather than each table</li>
+                                <li>is the key schema a list of attributes that are primary keys?</li>                
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Lambdas</p>
+                            <li>Why create a lambda deployment package</li>
+                            <li>flow: invoke via API/other services -> event sent to function -> run functions</li>
+                            <li><code>event.APIGatewayProxyRequest</code>: where is the type signature of <code>event</code></li>
+                            <li>is <code>APIGatewayProxyRequest</code> defined in API Gateway or Lambda</li>
+                            <li>What is a proxy resource</li>
+                        </li>
 
+                    </ul>
+                </li>
+                <li>I've been driving with eyes closed all day without a backend to help with testing</li>
             </ul>
         </section>
     </body>

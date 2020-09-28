@@ -74,9 +74,17 @@
                         <ul>
                             <li>Elm app hosted on Amplify</li>
                             <li>➡️ CirlceCI configured to use aws resources</li>
-                            <li>✅ RestAPI spec written in Swagger</li> 
-                            <li>Lambdas hosted on AWS</li> 
-                            <li>RestAPI connected with Lambdas via API Gateway</li>
+                            <li>✅ RestAPI spec written in Swagger</li>
+                            <li>
+                                <p>Lambdas hosted on AWS</p>
+                                <ul>
+                                    <li>➡️Authenticate</li>
+                                    <li>Retrieve</li>
+                                    <li>Add</li>
+                                    <li>Delete</li>
+                                </ul>
+                            </li> 
+                            <li>Integrate proxy requests Lambdas with API Gateway</li>
                             <li>DynamoDB table that has 18 items</li>
                             <li>images stored in S3</li>
                         </ul>
@@ -90,6 +98,32 @@
                     </p>
                 </li>
             </ol>
+        </article>
+        <article>
+            <h2>Summary</h2>
+            <p>
+                The most important things I've learnt are: 
+            </p>
+            <p>
+                <b>1. adopt an API-first approach or use Elm: </b> writing the doc in Swagger really gave me a clear picture of the business logic of the app. 
+                It's better than guessing from the frontend as see fit. Luckily, the Elm architecture helped alleviate the pain. I kept thinking
+                about Evan's talk on The life of a file as the data structure does evolve and unfold itself in front of me as I go on along. so 
+                even without doing the API first, I did pretty well in envisioning what the backend would look like. <br>
+                Next time, I'd use API-first if I'm familiar with the backend technologies, otherwise I'll use Elm to get something up and running at the front.
+            </p>
+            <p>
+                <b>2. make notes of the questions and doubts along the way:</b> It smooths out my thought process; by forcing myself to put it into words, 
+                I was working to find out what the actual questions are, how many are they. It allows me to learn about how I learn; by reflecting on the notes, 
+                say after a while, I should discover what kind of questions do I ask and hence how do I approach a problem and translate it to myself. It also 
+                helps measuring my learning ability over time; was I able to divide and conquer? could I surface the problem when the program deficiency is not obviosu; 
+                One last benefit is that I get to teach someone better than the docs once realised the common pitfalls.
+            </p>
+            <p>
+                In general, I'm quite happy about this project even though it's still a failure as the ❌s still there. This time, the goals are more acheivable and specific. 
+                I was more devoted and entertained by it as the items are more actionable. The backend part gave very dubious goals and descriptions due to the alienness of
+                of the concepts, still I felt that I made great progress because I refined them with the help of the notes. I'll continue working on it the weekend after, so meanwhile
+                had to use a text document to collect the evidence and commentaries. 
+            </p>
         </article>
     </body>
 </html>
