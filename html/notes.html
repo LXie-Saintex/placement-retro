@@ -6,6 +6,12 @@
     <body>
         <h1>Notes</h1>
         <section>
+            <h2>Writing</h2>
+            <ul>
+                <li>state the purpose of the action before the actual implementation</li>
+            </ul>
+        </section>
+        <section>
             <h2>K8s and Helm</h2>
             <ul>
                 <li>Helm is used to write K8s controllers</li>
@@ -17,6 +23,11 @@
                 <li>AWS resources means the things like: S3, EC2, ELB, DynamoDB;
                     Unlike K8s resources and terraform resources, which are external to K8s and Terraform themselves;
                 </li>
+                <li>Helm: where are the previous releases stored</li>
+                <li>what is the relation between helm releases and K8s pods</li>
+                <li>does the controller live in a pod? is it a pod?</li>
+                <li>NOdes and kubelets</li>
+                <li><b>the Helm release statuses, any logs possible? </b></li>
             </ul>
         </section>
         <section>
@@ -66,13 +77,15 @@
                         </li>
                         <li>
                             <p>Lambdas</p>
-                            <li>Why create a lambda deployment package</li>
-                            <li>flow: invoke via API/other services -> event sent to function -> run functions</li>
-                            <li><code>event.APIGatewayProxyRequest</code>: where is the type signature of <code>event</code></li>
-                            <li>is <code>APIGatewayProxyRequest</code> defined in API Gateway or Lambda</li>
-                            <li>What is a proxy resource</li>
+                            <ul>
+                                <li>Why create a lambda deployment package</li>
+                                <li>flow: invoke via API/other services -> event sent to function -> run functions</li>
+                                <li><code>event.APIGatewayProxyRequest</code>: where is the type signature of <code>event</code></li>
+                                <li>is <code>APIGatewayProxyRequest</code> defined in API Gateway or Lambda</li>
+                                <li>What is a proxy resource</li>
+    
+                            </ul>
                         </li>
-
                     </ul>
                 </li>
                 <li>I've been driving with eyes closed all day without a backend to help with testing</li>
