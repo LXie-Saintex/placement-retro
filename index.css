@@ -36,7 +36,11 @@ ul li.sunsavers {
   border: 5px solid #3700b3;
 }
 ul li.todos, ul li.weekend, ul li.leftovers, ul li.notes {
-  border: 5px solid #03dac5;
+  border: 5px solid whitesmoke;
+}
+ul li.specials {
+  border: 5px solid #cf6679;
+  background-color: #121212;
 }
 ul li a:link, ul li a:visited {
   display: inline-block;
@@ -73,8 +77,12 @@ span[role=img]#sunsavers div {
   background-color: #3700b3;
   margin-left: 5px;
 }
+span[role=img]#specials div {
+  background-color: #cf6679;
+  margin-left: 5px;
+}
 span[role=img]#others div {
-  background-color: #03dac5;
+  background-color: whitesmoke;
   margin-left: 5px;
 }
 

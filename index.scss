@@ -34,7 +34,12 @@ ul {
         }
 
         &.todos, &.weekend, &.leftovers, &.notes {
-            border: 5px solid $secondary; 
+            border: 5px solid $text; 
+        }
+
+        &.specials {
+            border: 5px solid $error; 
+            background-color: $bg;
         }
 
         a:link, a:visited {
@@ -72,8 +77,12 @@ span[role=img] {
         background-color: $primary-variant;
         margin-left: 5px;
     }
+    &#specials div {
+        background-color: $error;
+        margin-left: 5px;
+    }
     &#others div{
-        background-color: $secondary;
+        background-color: $text;
         margin-left: 5px;
     }
 }
