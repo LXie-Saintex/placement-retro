@@ -67,6 +67,13 @@ img {
   font-size: 1.3em;
 }
 
+.log {
+  background-color: #121212;
+  border: 1px solid #272727;
+  border-radius: 2px;
+  padding: 10px;
+}
+
 li .weeklies {
   list-style-type: none;
 }

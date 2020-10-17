@@ -61,6 +61,13 @@ img {
     font-size: 1.3em;
 }
 
+.log {
+    background-color: $bg;
+    border: 1px solid $overlay;
+    border-radius: 2px;
+    padding: 10px; 
+}
+
 li .weeklies {
     list-style-type: none;
     &::before, &::after{
