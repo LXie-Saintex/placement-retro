@@ -40,7 +40,6 @@ ul li.todos, ul li.weekend, ul li.leftovers, ul li.notes {
 }
 ul li.specials {
   border: 5px solid #cf6679;
-  background-color: #121212;
 }
 ul li a:link, ul li a:visited {
   display: inline-block;
