@@ -41,6 +41,9 @@ ul li.todos, ul li.weekend, ul li.leftovers, ul li.notes {
 ul li.specials {
   border: 5px solid #cf6679;
 }
+ul li.wireless {
+  border: 5px solid #121212;
+}
 ul li a:link, ul li a:visited {
   display: inline-block;
   width: 100%;

@@ -41,6 +41,10 @@ ul {
             border: 5px solid $error;
         }
 
+        &.wireless {
+            border: 5px solid $bg;
+        }
+
         a:link, a:visited {
             display : inline-block;
             width: 100%; 
