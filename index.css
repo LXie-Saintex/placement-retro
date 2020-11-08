@@ -35,7 +35,7 @@ ul li.main {
 ul li.sunsavers {
   border: 5px solid #3700b3;
 }
-ul li.todos, ul li.weekend, ul li.leftovers, ul li.notes {
+ul li.todos, ul li.weekend, ul li.leftovers, ul li.notes, ul li.interview {
   border: 5px solid whitesmoke;
 }
 ul li.specials {

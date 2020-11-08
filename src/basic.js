@@ -3,7 +3,8 @@ const Symbology = {
     interest : " 👀 ",
     have_to_do : " 🙄 ",
     asap: " 🚨 ",
-    brain_food: " 🧠 "
+    brain_food: " 🧠 ", 
+    tech_test: "🧪"
 }
 
 function addLeftoversSymbols (){
@@ -36,6 +37,11 @@ function addLeftoversSymbols (){
             let content = item.textContent;
             item.textContent = Symbology.asap + content; 
         }
+        if ( itemClasses.includes("tech_test") ) {
+            let content = item.textContent;
+            item.textContent = Symbology.tech_test + content; 
+        }
+
 
     }
 }
