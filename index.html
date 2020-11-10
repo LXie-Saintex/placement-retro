@@ -134,5 +134,16 @@
                 <a href="./html/week27.html">Week 27</a>
             </li>
         </ul>
+        <button id="locate">when in doubt</button>
+        <script src="./src/locate.js"></script>
+        <script>
+            window.onload = function(){
+                document.querySelector("#locate").addEventListener("click", locateMe); 
+                function locateMe() {
+                    examineTasks();
+                    renderResult();
+                }
+            }
+        </script>
     </body>
 </html>
