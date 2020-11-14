@@ -33,7 +33,7 @@ ul {
             border: 5px solid $primary-variant;
         }
 
-        &.todos, &.weekend, &.leftovers, &.notes, &.interview {
+        &.todos, &.weekend, &.leftovers, &.notes, &.interview, &.others {
             border: 5px solid $text; 
         }
 
