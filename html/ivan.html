@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Ivan</title>
+        <link rel="stylesheet" href="../css/basic.css">
+        <script>
+            document.onload = () => {
+                const datePicker = document.querySelector("input[type=date]");
+                datePicker.addEventListener("change", () => {
+                    window.location = `#${datePicker.nodeValue}`; 
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <section id="guidelines">
+            <p>🎖 milestones</p>
+                <ul>
+                    <li>20th Nov, resubmit MAIN writeup</li>
+                    <li>20th Nov, complete Permission Centre writeup</li>
+                    <li>20th Nov, complete News UK Technology overview</li>
+                    <li>27th Nov, complete Wireless architecture & product overview</li>
+                    <li>27th Nov, start Wireless writeup</li>
+                    <li>4th Dec, complete Wireless writeup</li>
+                    <li>9th Dec, submit Savers & Wireless</li>
+                </ul>
+            <p>🛶 Daily workflow</p>
+                <ul>
+                    <li>Sprint items: 09:30 - 15:00, spend 4 hours to work on the Wireless Web Project tickets & related comms</li>
+                    <li>After 15:00, no sprint work unless they are tiny fixes that can be done in half an hour</li>
+                    <li>
+                        2/3 hours before 09:30 <br>
+                        Before 27th Nov: architecture & product overviews of either wireless/news uk<br>
+                        After 27th Nov: work on Wireless writeup
+                    </li>
+                    <li>
+                        2/3 hours after 17:00 <br>
+                        Before 27th Nov: amend MAIN writeup <br>
+                        27th Nov - 4th Dec: Wider learning (almost a week, not bad)<br>
+                        After 4th Dec: amend Savers & Wireless writup 
+                    </li>
+                </ul>
+            <p>🙆🏻‍♀️ Stretch goals</p>
+                <ul>
+                    <li>explore React ecosystem</li>
+                    <li>get a React app MVP out with Marco</li>
+                    <li>how: assign the sprint work timeslot to it on weekend</li>
+                </ul>
+        </section>
+        <input type="date" max="2020-11-15" min="2020-12-08"/>
+        <ul id="entries">
+            <li id="2020-11-15">
+                <p class="date">15th Nov 2020</p>
+                <article>
+                    Today I will set out detailed guidelines during Ivan, including daily workflow, milestones and stretch goals.
+                    Will also look around Data Platforms Confluence pages, Wireless architecture & products and Permission Centre. 
+                    Start the notes sections to document the pain points. 
+                </article>
+            </li>
+            <li id="2020-11-16"></li>
+            <li id="2020-11-17"></li>
+        </ul>
+    </body>
+</html>
