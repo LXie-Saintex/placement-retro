@@ -2,14 +2,6 @@
     <head>
         <title>Ivan</title>
         <link rel="stylesheet" href="../css/basic.css">
-        <script>
-            document.onload = () => {
-                const datePicker = document.querySelector("input[type=date]");
-                datePicker.addEventListener("change", () => {
-                    window.location = `#${datePicker.nodeValue}`; 
-                })
-            }
-        </script>
     </head>
     <body>
         <section id="guidelines">
@@ -46,8 +38,7 @@
                     <li>how: assign the sprint work timeslot to it on weekend</li>
                 </ul>
         </section>
-        <input type="date" max="2020-11-15" min="2020-12-08"/>
-        <ul id="entries">
+        <ul id="entries" style="list-style: none;">
             <li id="2020-11-15">
                 <p class="date">15th Nov 2020</p>
                 <article>
