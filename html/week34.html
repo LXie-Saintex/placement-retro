@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Week 34 retro</title>
+        <link rel="stylesheet" href="../css/basic.css">
+    </head>
+    <body>
+        <h1>Week 34</h1>
+        <ul>
+            <li class="date">4th - 8th Jan, 2021</li>
+            <li class="team">Placement team: Wireless</li>
+            <li>
+                <ul>
+                    <li>Task: <a href="https://nidigitalsolutions.jira.com/browse/WWP-132">WWP-132: CircleCI setup</a></li>
+                    <li>Task: Slack usergroup</li>
+                </ul>
+            </li>
+        </ul>
+        <article>
+            <p>
+                Things I enjoyed most this week: team discussion around automation tests and CircleCI writeup
+            </p>
+            <p>
+                I have created the Slack usergroups and started to set up the wider channel. I only spent Monday on that since no one 
+                got back to me about who to include to the channel
+            </p>
+            <p>
+                On Tuesday, we had a fascinating discussion around the testing process & Jira workflow in general. Because the majority of the tasks on the board
+                rely on MAIN to implement their part, we had the time to reflect on our current ways of working. We had 2 sessions which really unveiled a lot of
+                valid doubts and confusions about the CI. I had a better understanding of the status quo and found out what has been confusing me since I joined the team.
+                <ol>
+                    <li>
+                        manual tests were done across the environments and even on PR stage. The complexity of the work is significantly increased as most of the repos do not have 
+                        up to date documentations on how to run the projects and almost exclusively rely on low-level plumbing. 
+                    </li> 
+                    <li>
+                        the development process is not test-driven. When the code goes into the CI for the first time, there is no test for it. 
+                    </li> 
+                    <li>
+                        this is further complicated by the abusive usage of git branching for division of labour. Instead of being an atomic piece, multiple PRs rely on 
+                        each other for final completion where the program correctness is confirmed.
+                    </li>> 
+                    <li>
+                        as a result, the code review process is prolonged by the need for piecing together different PRs which often carries little description and requires the reviewer
+                        going back and forth between Jira and Github. 
+                    </li> 
+                    <li>
+                        Code review lasts even longer when the commit history is not well-groomed to reflect the "true" changes. 
+                    </li> 
+                </ol>
+            </p>
+            <p>
+                The team tried to introduce more environment which is a non-solution to the real underlying problem. Besides, someone told me that creating a "true" PR environment is not worth it 
+                and its benefits questionable compared to simple mocked integration tests. I expressed my thoughts on this and argued that it's mainly because we are understaffed to set up and maintain
+                PR environments, which can be a constant source of pain from my experience at Sun Savers. I added the team to the CI channel and also started to config a new CI using the existing capabilities 
+                shared within the company. I added to README the links to those central repos and hope they will be used more often. I have the impression that the repos are not visible to teams outside MAIN
+                and this seems bad. 
+            </p>
+            <p>
+                <b>Standard points</b>: all of my projects have been reviewed, and I should have covered all standard points except for Point 6 - Design once I made some minor corrections. Craig has filled out his part
+                of employer reference. I reminded Jem of it and sent him the example responses. I had a call with Eli who expect to finish his part in next week. Eli made me realise that what I sent might be received 
+                differently at the other end, so I offered to walk the line managers through the evidence and verbally explain it if necessary. I will need to go to Craig for comments on Point 13 operational skills as 
+                Makers suggest that I had covered that with the MAIN piece. 
+            </p>
+            <p>
+                <b>Synoptic project</b>: I started with Quiz Manager and had a taste of project planning. I learnt about what is the purpose of an MVP and hence what the project planning should look like.
+                I did not achieve this week's goals as I had not decided on which tools to use for design or identified any technical weak points. It seems like 1 hour everyday is not enough. Next week I will move on
+                to the next project and see if I could catch up with the original plan.
+            </p>
+            <p>
+                <b>Maths exam</b>: I did nothing to prepare for it. The courses on BKSB is available again, I will take a test to see where i am and go from there. Currently i have some books and online resuorce to go to. 
+                Although i suspect that the internet itself would suffice, it'd be fun to have a small-scale systematic learning of fundamental mathematical concepts.
+            </p>
+            <p>
+                <b>Programming fundamentals</b>: Haven't done any.
+            </p>
+            <p>
+                <b>Algorithm training</b>: none.
+            </p>
+            <p>
+                <b>Side projects</b>: have plenty and worked on none. 
+            </p>
+        </article>
+    </body>
+</html>
